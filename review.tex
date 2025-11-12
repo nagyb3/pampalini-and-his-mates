@@ -58,7 +58,7 @@ submitted by
 
 % select appropriate
 % \select{accept}
-strong accept / accept / weak accept / borderline / weak reject / reject / strong reject
+\select{strong accept} / accept / weak accept / borderline / weak reject / reject / strong reject
 
 
 % --------------------------------------------------------------
@@ -66,32 +66,37 @@ strong accept / accept / weak accept / borderline / weak reject / reject / stron
 \section{Summary of the Content, Evaluation}
 
 % Summary of the article in 4-5 sentences
+The motivation behind this research lies in revisiting compiler optimization through unconventional, creative approaches. The newly proposed optimizing method (called the Poisson-Steve method) is a two phase process. In the first phase the original code is pre-processed (including minimizing branching, minimizing stack depth and maximizing bit- and computing parallelism). In the second phase the authors propose the use of hyper-metaprogramming, which was used to build the final optimized code from the pre-procesed code. The authors compared the Poisson-Steve method against two optimizers, and according to the benchmarks, the Poisson-Steve method achived faster runtimes, less memory usage and minimized peak stack depth. The results are revolutionary in the field of code optimizing and open up new doors for further possible exciting research projects.
 
 \bigskip
 
 % ------------------------------
 
 \textbf{Technical Content and Accuracy}
-\score{1-7}
+\score{6}
 
+The paper first introduces different esoteric languages and there compiler's use in code optimization. Then it explain the new method developed by the researchers to optimize code. The explination takes the reader deep into the optimizer and explains every step in each phase in great detail. Lastly, the paper presents the new method's perfomance benchmarks against two other optimizers. The technical accuracy seems to hold concrete as the methods outlines give us an easily reproducable system for its purpose.
 % 3-4 sentences about technical details, accuracy, why is the given point accurate?
+
 
 \bigskip
 
 % ------------------------------
 
 \textbf{Significance of the Work}
-\score{1-7}
+\score{6}
 
 % 3-4 sentences about the significance of the work, why is the given point accurate?
+This research undeniably opens up new doors in the field of code optimization. This combination of using esoteric language compilers for code optimization is outstanding and is not something that most researchers would have thought to yield such great results. If these results hold, future esoteric language compilers can be developed in the future that could improve optimization performance and produce even better optimized code.
 
 \bigskip
 
 % ------------------------------
 
 \textbf{Appropriate Title, Introduction and Conclusion}
-\score{1-7}
+\score{7}
 
+The title perfectly highlights the importance and novelty of the results. The introduction gives a great peak into the significance of this work and highlights the differents parts of the solution proposed.
 % 3-4 sentences about title choosing, introduction, conclusion, why is the given point accurate?
 
 \bigskip
@@ -99,16 +104,19 @@ strong accept / accept / weak accept / borderline / weak reject / reject / stron
 % ------------------------------
 
 \textbf{Overall Organization}
-\score{1-7}
+\score{6}
 
 % 3-4 sentences about organization of the paper, why is the given point accurate?
+Clear, and easy to understand structure is undeniable in this research paper. The paper clearly intoduces the topic discussed, it later explain it in great details and gives exact descriptions to the methodology used, and the results achieved.
 
 \bigskip
 
 % ------------------------------
 
 \textbf{Appropriateness for the Conf/Journal}
-\score{1-7}
+\score{7}
+
+The given paper fits greatly into our current conference as it gives a truly ground breaking research results to the audience. Also, more notably, it highlights esoteric languages, which seem to go under the radar for most people even though it should not. For these reasons, I think this paper would breath some fresh our into our conference with its topic and the creativity of the proposed methods and results.
 
 % 3-4 sentences about appropriateness, why should the paper be accepted in our conference or why not, why is the given point accurate?
 
@@ -117,7 +125,9 @@ strong accept / accept / weak accept / borderline / weak reject / reject / stron
 % ------------------------------
 
 \textbf{Style and Clarity of the Paper}
-\score{1-7}
+\score{6}
+
+The paper shows concise and clear language. Its use of diagrams definitely help the readers understand the flow of the code through the different phases used to optimize the code. Also, it gives concrete reasoning into why and how it achieves the given results, which I think is easily readable for most people.
 
 % 3-4 sentences about the style, clarity why is the given point accurate?
 
@@ -126,43 +136,65 @@ strong accept / accept / weak accept / borderline / weak reject / reject / stron
 % ------------------------------
 
 \textbf{Originality of the Content}
-\score{1-7}
+\score{7}
 
+Using esoteric language compilers has been done before, but this combination of using the techniques gained by them has not been published yet to the best of my knowledge. The approach's use of hyper-metaprogramming especially seem original for this purpose. I believe these results' originality is also a big reason why they should be published.
 % 3-4 sentences about organization of the content, why is the given point accurate?
 
 \bigskip
 
 % --------------------------------------------------------------
 
-{\Large Sum Score \score{}} % please sum up the above
+{\Large Sum Score \score{45}} % please sum up the above
 
 % --------------------------------------------------------------
 
 \section{Novelty of Results}
 
 % Why this result is new, what are the new components? 3-4 sentences
-
+The paper is novel in framing esoteric-language behaviour as a source of optimisation techniques. The paper's two phase approach involving pre-processing and hyper-metaprogramming is entirely new to my personal knowledge. Also, the paper's use of esoteric language compilers for optimizing code is a never before seen, and never before thought of approach, even to seasoned researchers. 
 
 % ------------------------------
 
 \section{Appropriateness of the Methods,\\ Validation, References}
 
-% 3-4 sentences about the validationi and appropreateness of the methods (pretend you checked and evaluated the methods
+The paper shows an easy to follow and easily recreatable approach to the readers. The methods described in the article seem fitting for the goal of this research project. The paper gives great detail into the inner workings of the proposed optimization method which makes it easily reproducable and verifiable by anyone. However I think in some places some further details could have been given about the methodology used. For example the paper mentions that it uses a modified version of the Sparrow esoteric language, but gives no further details about how exactly Sparrow was modified.
+
+% 3-4 sentences about the validation and appropriateness of the methods (pretend you checked and evaluated the methods)
 
 
 % ------------------------------
 
 \section{Comments on Errors, Typos, Grammar, Figures}
+\begin{itemize}
+\item Typos found in the paper:
+\end{itemize}
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|p{5cm}|p{5cm}|}
+\hline
+\textbf{Page} & \textbf{Original} & \textbf{Correct} \\
+\hline
+1 & optimiza\-tion \textbf{trough} control flow & optimization \textbf{through} control flow \\
+\hline
+1 & hyper-meta programming & hyper-metaprogramming \\
+\hline
+2 & \textbf{Branfuck}'s features & \textbf{Brainfuck}'s features \\
+\hline
+2 & the compiler achieves this \textbf{trough} changing the program & the compiler achieves this \textbf{through} changing the program \\
+\hline
+\end{tabular}
+\end{table}
+
 
 % 2-3 sentences and listed items of errors, grammar, typos
 
-\begin{itemize}
-\item Item A
-\end{itemize}
 
 % ------------------------------
 
 \section{Proposal for Improvements}
+
+In my opinion further benchmark could be a great way to further improve this paper. For example, we could try comparing the Poisson-Steve technique to more optimizers, not just 2. Furthermore, the paper could include some information about how the other optimizers work internally, any why is the Poisson-Steve faster than them. Also, further improvements could be made in the benchmarking to focus more on what are the types of programs that get sped up by this new inveented technqiue.
 
 % Proposals for improvement 3-4 sentences
 
@@ -172,7 +204,7 @@ strong accept / accept / weak accept / borderline / weak reject / reject / stron
 
 % select appropriate
 % \select{medium}
-expert / high / medium / low / none
+expert / high / \select{medium} / low / none
 
 
 % ------------------------------
